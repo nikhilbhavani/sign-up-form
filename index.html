@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="Norse-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="picture">
+            <div class="overlay-text">
+                <img src="images/odin-lined.png" alt="Odin Logo">
+                <h2>Sign-up</h2>
+            </div>
+            <p>Photo by Lexi Laginess on Unsplash.</p>
+        </div>
+
+        <div class="sign-up">
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="first_name">
+                        First Name
+                        <input type="text" id="first_name" placeholder="Jon">
+                    </label>
+                    <label for="last_name">
+                        Last Name
+                        <input type="text" id="last_name" placeholder="Doe">
+                    </label>
+                    <label for="email">
+                        Email
+                        <input type="email" id="email" placeholder="jondoe@email.com">
+                    </label>
+                    <label for="phone_number">
+                        Phone Number
+                        <input type="number" id="phone_number" maxlength="10">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

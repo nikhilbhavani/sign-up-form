@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+@font-face { 
+    font-family: 'MyFont'; 
+    src: 
+        url('Norse-Bold.otf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    border: black;
+}
+
+.picture{
+    flex: 1;
+    background: url(images/lexi-laginess-XYfjIT9c01Q-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.picture p{
+    font-family: 'MyFont', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+.overlay-text{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text img{
+    max-width: 100px;
+    margin-right: 15px;
+}
+.overlay-text h2{
+    font-family: 'MyFont', Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
